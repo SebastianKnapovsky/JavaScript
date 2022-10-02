@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rozgrzewka, praca z DOM i zdarzeniami dokkumentu</title>
+    
+    <input type="text" id="in1" oninput="przelicz()">
+    <input type="text" id="in2" oninput="przelicz()">
+    <input type="text" id="in3" oninput="przelicz()">
+    <input type="text" id="in4" oninput="przelicz()">
+    <button onclick="przelicz()">Przelicz</button>
+    <button onclick="addField()">Dodaj Pole</button>
+
+    <div id="result1"></div>
+    <div id="result2"></div>
+    <div id="result3"></div>
+    <div id="result4"></div>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <main>
+        
+        <div>
+
+        </div>
+    </main>
+</body>
+
+<script type="text/javascript">
+    
+function przelicz(){
+    let x1 = document.querySelector("#in1").value;
+    let x2 = document.querySelector("#in2").value;
+    let x3 = document.querySelector("#in3").value;
+    let x4 = document.querySelector("#in4").value;
+
+    document.querySelector("#result1").textContent = "Suma :" + x1+x2+x3+x4;
+    document.querySelector("#result2").textContent = "Średnia :" + x1+x2+x3+x4/4;
+    document.querySelector("#result3").textContent = "V.Min :" + Math.min(x1, x2, x3, x4);
+    document.querySelector("#result4").textContent = "V.Max :" + Math.max(x1, x2, x3, x4);
+
+}
+
+</script>
+
+</html>
