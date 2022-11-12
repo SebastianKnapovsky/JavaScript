@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(65, 59, 59);
+}
+
+.container{
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+audio{
+   visibility: hidden;
+   width: 0px;
+   height: 0px;
+}
+
+.drumkit{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.drumkit h1{
+    color: white;
+    font-size: 40px;
+    font-variant-caps: small-caps;
+    padding: 20px;
+}
+
+.chanel1, 
+.chanel2, 
+.chanel3, 
+.chanel4{
+    width: 350px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 20px 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.icons, h2{
+    margin: 20px;
+}
+
+#play1, #play2, #play3, #play4,
+#record1, #record2, #record3, #record4{
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+}
+
+#play1:hover, #play2:hover, #play3:hover, #play4:hover,
+#record1:hover, #record2:hover, #record3:hover, #record4:hover{
+    width: 28px;
+    height: 28px;
+    margin: 3px;
+}
+
+
+h2{
+    font-size: 16px;
+}
