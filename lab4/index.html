@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NotePocket</title>
+</head>
+<body>
+    <div class="form">
+        <form id="add-form">
+            <input type="text" id = "title" placeholder="Tytuł" required>
+            <textarea id="content" placeholder="Treść"></textarea>
+            <select id="color" required>
+                <option value="">Select color...</option>
+                <option value="#43B9B3">Blue</option>
+                <option value="#B343B9">Violet</option>
+                <option value="#B9B343">Yellow</option>
+            </select>
+            <label for="pin">
+                Pin
+                <input type="checkbox" id="pin">
+            </label>     
+            <button id ="add">Add</button>
+        </form>
+    </div>
+    <div class="notes">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

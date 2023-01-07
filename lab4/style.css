@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: beige;
+    font-family: Helvetica, sans-serif;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32px;
+}
+
+#add-form, #edit-form{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    flex-direction: column;
+    max-width: 400px;
+    padding: 36px 24px;
+}
+
+label, textarea, input, select{
+    margin-bottom: 16px;
+    padding: 12px 12px;
+}
+
+#add{
+    text-align: center;
+    width: 100px;
+}
+
+.notes{
+    display: flex;
+    margin: 64px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.note{
+    margin: 16px;
+}
+
+.note > p, h3{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    width: 400px;
+    margin: 16px;
+}
+
+.note > h3{
+    margin: 12px;
+    color: #000000;
+}
+
+.note > p, button{
+    margin-bottom: 16px;
+}
+
+.note > button{
+    padding: 2px;
+    margin: 5px;
+}
